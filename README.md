@@ -10,42 +10,44 @@ This project applies **Masked R-CNN** for **instance segmentation** on a **Blood
 
 ## 🛠 Installation  
 
-### 1️⃣ Install Dependencies  
-```bash
+## 1️⃣ Install Dependencies
+```sh
 pip install torch torchvision torchaudio
 pip install opencv-python numpy matplotlib
 pip install git+https://github.com/facebookresearch/detectron2.git
-🏋️‍♂️ Model Training
-🔹 Preprocessing
-Images are resized and normalized.
+```
 
-Augmentation techniques like flipping, rotation, and brightness adjustment are applied.
+## 🎭 Model Training
 
-🔹 Training
-The model is trained using Masked R-CNN on a labeled dataset.
+### 🔹 Preprocessing
+- Images are resized and normalized.
+- Augmentation techniques like flipping, rotation, and brightness adjustment are applied.
 
-Pretrained weights from COCO are used for feature extraction.
+### 🔹 Training
+- The model is trained using Masked R-CNN on a labeled dataset.
+- Pretrained weights from COCO are used for feature extraction.
+- The optimizer and learning rate scheduler are configured for efficient convergence.
 
-The optimizer and learning rate scheduler are configured for efficient convergence.
+### 🔹 Evaluation Metrics
+- Precision, recall, and IoU (Intersection over Union) are used to assess performance.
+- The model's ability to detect and segment blood cells is analyzed using test images.
 
-🔹 Evaluation Metrics
-Precision, recall, and IoU (Intersection over Union) are used to assess performance.
-
-The model's ability to detect and segment blood cells is analyzed using test images.
-
-🖼 Sample Output
-html
-Copy
-Edit
+## 🖼 Sample Output
+```html
 <img src="sample_output.png" width="600">
-🏗 Future Improvements
-✅ Fine-tune the Masked R-CNN model for higher accuracy
-✅ Train on a custom blood cell dataset
-✅ Deploy as a web-based application
-✅ Optimize inference speed for real-time detection
+```
 
-🤝 Contributing
+## 🏗 Future Improvements
+✅ Fine-tune the Masked R-CNN model for higher accuracy  
+✅ Train on a custom blood cell dataset  
+✅ Deploy as a web-based application  
+✅ Optimize inference speed for real-time detection  
+
+## 🤝 Contributing
 Pull requests are welcome! Feel free to improve detection accuracy, add features, or optimize the code.
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
+
+
+
